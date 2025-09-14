@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - WDD 131</title>
+    <meta name="description" content="A responsive temple album showcasing beautiful temples from around the world">
+    <meta name="author" content="Nicholas Mendez">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Temple Album</h1>
+            <nav>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#" class="nav-link" data-filter="old">Old</a></li>
+                    <li><a href="#" class="nav-link" data-filter="new">New</a></li>
+                    <li><a href="#" class="nav-link" data-filter="large">Large</a></li>
+                    <li><a href="#" class="nav-link" data-filter="small">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Sacred Temples Around the World</h1>
+        <div class="temple-gallery">
+            <figure class="temple-card" data-category="old">
+                <img src="images/temple/salt_lake_temple_lds.webp" 
+                     alt="Salt Lake Temple" loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="new">
+                <img src="images/temple/paris_france_temple_exterior.webp" 
+                     alt="Paris France Temple" loading="lazy">
+                <figcaption>Paris France Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="large">
+                <img src="images/temple/washington_dc_temple.webp" 
+                     alt="Washington D.C. Temple" loading="lazy">
+                <figcaption>Washington D.C. Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="new">
+                <img src="images/temple/tucson_arizona_temple_exterior.webp" 
+                     alt="Tucson Arizona Temple" loading="lazy">
+                <figcaption>Tucson Arizona Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="old">
+                <img src="images/temple/laie_hawaii_temple_lds.webp" 
+                     alt="Laie Hawaii Temple" loading="lazy">
+                <figcaption>Laie Hawaii Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="new">
+                <img src="images/temple/fort_lauderdale_florida_temple.webp" 
+                     alt="Fort Lauderdale Florida Temple" loading="lazy">
+                <figcaption>Fort Lauderdale Florida Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="large">
+                <img src="images/temple/bern_switzerland_temple_lds.webp" 
+                     alt="Bern Switzerland Temple" loading="lazy">
+                <figcaption>Bern Switzerland Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="small">
+                <img src="images/temple/Columbus-ohio.jpeg" 
+                     alt="Columbus Ohio Temple" loading="lazy">
+                <figcaption>Columbus Ohio Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="old">
+                <img src="images/temple/concepcion_chile_temple.webp" 
+                     alt="Concepcion Chile Temple" loading="lazy">
+                <figcaption>Concepcion Chile Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="new">
+                <img src="images/temple/tijuana_mexico_temple_rendering.webp" 
+                     alt="Tijuana Mexico Temple" loading="lazy">
+                <figcaption>Tijuana Mexico Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="large">
+                <img src="images/temple/Billboard-Saratoga-Springs.jpg" 
+                     alt="Saratoga Springs Utah Temple" loading="lazy">
+                <figcaption>Saratoga Springs Utah Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="small">
+                <img src="images/temple/accra_ghana_temple.webp" 
+                     alt="Accra Ghana Temple" loading="lazy">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Nicholas Mendez - Santo Domingo, Dominican Republic</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

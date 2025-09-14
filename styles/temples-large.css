@@ -1,0 +1,153 @@
+
+@media (min-width: 768px) {
+    .header-container {
+        padding: 0 2rem;
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        position: static;
+        background: none;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        min-width: auto;
+        padding: 0;
+        margin: 0;
+        gap: 0.5rem;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem;
+        border-radius: var(--border-radius-sm);
+        background: transparent;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        background: var(--background-light);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow);
+    }
+
+    main {
+        margin: 3rem auto;
+        padding: 0 2rem;
+    }
+
+    main h1 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .temple-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .temple-card img {
+        height: 280px;
+    }
+
+    .temple-card figcaption {
+        padding: 1.25rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header-container {
+        padding: 0 3rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .nav-link {
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 4rem auto;
+        padding: 0 3rem;
+    }
+
+    main h1 {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .temple-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+
+    .temple-card img {
+        height: 300px;
+    }
+
+    .temple-card figcaption {
+        padding: 1.5rem;
+        font-size: 1.125rem;
+    }
+
+    .temple-card:hover {
+        transform: translateY(-8px) scale(1.02);
+    }
+
+    .temple-card:hover img {
+        transform: scale(1.08);
+    }
+}
+
+@media (min-width: 1440px) {
+    .header-container {
+        padding: 0 4rem;
+    }
+
+    main {
+        max-width: 1400px;
+        padding: 0 4rem;
+    }
+
+    .temple-gallery {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+    }
+
+    .temple-card img {
+        height: 320px;
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .temple-card,
+    .temple-card img,
+    .nav-link {
+        transition: none;
+    }
+
+    .temple-card:hover {
+        transform: none;
+    }
+
+    .temple-card:hover img {
+        transform: none;
+    }
+}
