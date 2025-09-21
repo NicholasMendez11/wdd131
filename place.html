@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santo Domingo - Dominican Republic</title>
+    <meta
+      name="description"
+      content="Discover Santo Domingo, the vibrant capital of Dominican Republic - a perfect blend of colonial history and modern Caribbean culture"
+    />
+    <meta name="author" content="Nicholas Mendez" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Santo Domingo</h1>
+      <p>Capital of Dominican Republic</p>
+    </header>
+
+    <main>
+      <section class="main-content">
+        <div class="content-grid">
+          <div class="data-section">
+            <h3>Data</h3>
+            <div class="data-list">
+              <div class="data-item">
+                <span class="label">Founded:</span>
+                <span class="value">1496</span>
+              </div>
+              <div class="data-item">
+                <span class="label">Population:</span>
+                <span class="value">3+ Million</span>
+              </div>
+              <div class="data-item">
+                <span class="label">Status:</span>
+                <span class="value">UNESCO World Heritage</span>
+              </div>
+              <div class="data-item">
+                <span class="label">Climate:</span>
+                <span class="value">Tropical</span>
+              </div>
+              <div class="data-item">
+                <span class="label">Language:</span>
+                <span class="value">Spanish</span>
+              </div>
+              <div class="data-item">
+                <span class="label">Currency:</span>
+                <span class="value">Dominican Peso</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <picture>
+              <source
+                media="(max-width: 400px)"
+                srcset="images/santo-domingo.webp"
+              />
+              <source
+                media="(max-width: 800px)"
+                srcset="images/santo-domingo.webp"
+              />
+              <img
+                src="images/santo-domingo.webp"
+                alt="Beautiful view of Santo Domingo's colonial architecture and modern skyline"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
+          <div class="weather-section">
+            <h3>Weather</h3>
+            <div class="weather-icon">
+              <img
+                src="images/icon/weather.png"
+                alt="Weather icon"
+                width="60"
+                height="60"
+              />
+            </div>
+            <div class="weather-info">
+              <div class="weather-details">
+                 <div class="weather-item">
+                   <span class="label">Temperature:</span>
+                   <span class="value">28°C</span>
+                 </div>
+                <div class="weather-item">
+                  <span class="label">Condition:</span>
+                  <span class="value">Partly Cloudy</span>
+                </div>
+                <div class="weather-item">
+                  <span class="label">Wind Speed:</span>
+                  <span class="value">15 km/h</span>
+                </div>
+                <div class="weather-item">
+                  <span class="label">Wind Chill:</span>
+                  <span class="value" id="windchill">N/A</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h3>Discover Santo Domingo</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="images/zona-colonial.webp"
+              alt="Colonial architecture in Zona Colonial"
+              loading="lazy"
+            />
+            <p>Zona Colonial</p>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/beach.webp"
+              alt="Beautiful Caribbean beach near Santo Domingo"
+              loading="lazy"
+            />
+            <p>Caribbean Beaches</p>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/city.webp"
+              alt="Modern Santo Domingo cityscape"
+              loading="lazy"
+            />
+            <p>Modern City</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> Nicholas Mendez - Santo Domingo,
+        Dominican Republic
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
