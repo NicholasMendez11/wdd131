@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album - WDD 131</title>
+    <meta name="description" content="A responsive temple album with dynamic filtering showcasing beautiful temples from around the world">
+    <meta name="author" content="Nicholas Mendez">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Temple Album</h1>
+            <nav>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#" class="nav-link" data-filter="old">Old</a></li>
+                    <li><a href="#" class="nav-link" data-filter="new">New</a></li>
+                    <li><a href="#" class="nav-link" data-filter="large">Large</a></li>
+                    <li><a href="#" class="nav-link" data-filter="small">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Sacred Temples Around the World</h1>
+        <div class="temple-gallery" id="temple-gallery">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Nicholas Mendez - Santo Domingo, Dominican Republic</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
