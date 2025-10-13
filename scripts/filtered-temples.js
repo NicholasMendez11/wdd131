@@ -110,8 +110,7 @@ function createTempleCard(temple) {
                  alt="${temple.templeName}" 
                  loading="lazy"
                  width="400" 
-                 height="250"
-                 onerror="this.src='https://via.placeholder.com/400x250/cccccc/666666?text=${encodeURIComponent(temple.templeName)}'; this.style.background='#f0f0f0';">
+                 height="250">
             <figcaption>
                 <h3>${temple.templeName}</h3>
                 <p><strong>Location:</strong> ${temple.location}</p>

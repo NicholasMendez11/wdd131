@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Keto Lifestyle Hub. Share your questions, success stories, or recipe suggestions.">
+    <title>Contact Us - Keto Lifestyle Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Keto Lifestyle Hub</h1>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="food-guide.html">Food Guide</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>Questions, feedback, or success stories? We'd love to hear from you!</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Why Contact Us?</h3>
+                        <div class="info-item">
+                            <h4>💬 Ask Questions</h4>
+                            <p>Have a question about keto? We're here to help guide you on your journey.</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>📖 Share Your Story</h4>
+                            <p>Tell us about your keto success! Your story might inspire others.</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>🍳 Suggest Recipes</h4>
+                            <p>Have a favorite keto recipe? We'd love to feature it on our site.</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>💡 Provide Feedback</h4>
+                            <p>Help us improve by sharing what you'd like to see more of.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required minlength="3" autocomplete="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required autocomplete="email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject <span class="required">*</span></label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="question">General Question</option>
+                                    <option value="recipe">Recipe Suggestion</option>
+                                    <option value="story">Success Story</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label>
+                                    <input type="checkbox" id="subscribe" name="subscribe">
+                                    <span>Subscribe to our weekly keto tips newsletter</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                        <p class="form-message" id="form-message"></p>
+                    </div>
+                </div>
+
+                <div class="submissions-section">
+                    <h3>Recent Submissions</h3>
+                    <p class="submissions-count" id="submissions-count"></p>
+                    <div class="submissions-list" id="submissions-list"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Keto Lifestyle Hub</h3>
+                    <p>Your trusted source for practical keto guidance and delicious low-carb recipes.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="food-guide.html">Food Guide</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Keto Lifestyle Hub. All rights reserved.</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
+

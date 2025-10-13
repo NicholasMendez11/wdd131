@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the keto lifestyle with practical guides, delicious recipes, and expert tips for sustainable low-carb living.">
+    <title>Keto Lifestyle Hub - Your Guide to Healthy Low-Carb Living</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Keto Lifestyle Hub</h1>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="food-guide.html">Food Guide</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Your Keto Journey</h2>
+                <p>Transform your health with practical, real-world keto guidance that actually works</p>
+                <a href="food-guide.html" class="cta-button">Get Started Today</a>
+            </div>
+        </section>
+
+        <section class="intro">
+            <div class="container">
+                <h2>What is the Keto Diet?</h2>
+                <div class="intro-grid">
+                    <div class="intro-text">
+                        <p>The ketogenic diet is a low-carb, high-fat eating approach that puts your body into a metabolic state called ketosis. When you drastically reduce carbohydrates, your body becomes incredibly efficient at burning fat for energy instead of glucose.</p>
+                        <p>Unlike other diets, keto focuses on whole foods like meats, fish, eggs, nuts, healthy oils, avocados, and plenty of low-carb vegetables. You'll feel satisfied while your body naturally burns fat for fuel.</p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <h3>70-75%</h3>
+                                <p>Healthy Fats</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>20-25%</h3>
+                                <p>Protein</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>5-10%</h3>
+                                <p>Carbohydrates</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-image">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&h=600&fit=crop" alt="Healthy keto meal with salmon, avocado, and vegetables" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <h2>Why Choose Keto?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⚡</div>
+                        <h3>Increased Energy</h3>
+                        <p>Experience steady energy throughout the day without crashes from blood sugar spikes</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🎯</div>
+                        <h3>Mental Clarity</h3>
+                        <p>Enjoy improved focus and cognitive function powered by ketones</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💪</div>
+                        <h3>Weight Management</h3>
+                        <p>Achieve sustainable weight loss while feeling satisfied and full</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🩺</div>
+                        <h3>Better Health Markers</h3>
+                        <p>Support healthy blood sugar levels and improve metabolic health</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-recipes">
+            <div class="container">
+                <h2>Featured Keto Recipes</h2>
+                <p class="section-subtitle">Quick, delicious meals that fit your lifestyle</p>
+                <div class="recipe-preview" id="featured-recipes"></div>
+                <a href="recipes.html" class="view-all-button">View All Recipes</a>
+            </div>
+        </section>
+
+        <section class="quick-tips">
+            <div class="container">
+                <h2>Quick Tips for Success</h2>
+                <div class="tips-container" id="tips-container"></div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Updated</h2>
+                    <p>Get weekly keto tips, recipes, and motivation delivered to your inbox</p>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <p class="newsletter-message" id="newsletter-message"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Keto Lifestyle Hub</h3>
+                    <p>Your trusted source for practical keto guidance and delicious low-carb recipes.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="food-guide.html">Food Guide</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Keto Lifestyle Hub - Nicholas Mendez. All rights reserved.</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
+

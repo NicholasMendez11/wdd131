@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our collection of easy, delicious keto recipes for breakfast, lunch, dinner, and snacks.">
+    <title>Keto Recipes - Keto Lifestyle Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Keto Lifestyle Hub</h1>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html" class="active">Recipes</a></li>
+                    <li><a href="food-guide.html">Food Guide</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h2>Keto Recipes</h2>
+                <p>Easy, delicious meals that make keto simple and satisfying</p>
+            </div>
+        </section>
+
+        <section class="recipes-section">
+            <div class="container">
+                <div class="filter-bar">
+                    <h3>Filter by Category:</h3>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-category="all">All Recipes</button>
+                        <button class="filter-btn" data-category="breakfast">Breakfast</button>
+                        <button class="filter-btn" data-category="lunch">Lunch</button>
+                        <button class="filter-btn" data-category="dinner">Dinner</button>
+                        <button class="filter-btn" data-category="snacks">Snacks</button>
+                    </div>
+                </div>
+
+                <div class="recipes-grid" id="recipes-grid"></div>
+            </div>
+        </section>
+
+        <section class="recipe-tips">
+            <div class="container">
+                <h2>Recipe Success Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-box">
+                        <h3>🥘 Meal Prep</h3>
+                        <p>Prepare ingredients on Sunday for quick weekday cooking. Store chopped vegetables and pre-cooked proteins in airtight containers.</p>
+                    </div>
+                    <div class="tip-box">
+                        <h3>🔥 Cooking Fats</h3>
+                        <p>Use butter, coconut oil, avocado oil, or ghee for cooking. These healthy fats enhance flavor and keep you in ketosis.</p>
+                    </div>
+                    <div class="tip-box">
+                        <h3>🧂 Seasoning</h3>
+                        <p>Always check spice blends for hidden sugars. Use fresh herbs, salt, pepper, and single-ingredient spices.</p>
+                    </div>
+                    <div class="tip-box">
+                        <h3>📊 Portions</h3>
+                        <p>Listen to your hunger cues. Keto naturally regulates appetite, so eat until satisfied, not stuffed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Keto Lifestyle Hub</h3>
+                    <p>Your trusted source for practical keto guidance and delicious low-carb recipes.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="food-guide.html">Food Guide</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Keto Lifestyle Hub. All rights reserved.</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
+
